@@ -20,7 +20,6 @@
             font-family: 'Segoe UI', sans-serif;
         }
 
-        /* Card */
         .card {
             background: white;
             padding: 40px 30px;
@@ -47,7 +46,6 @@
             font-size: clamp(22px, 6vw, 26px);
         }
 
-        /* Buttons */
         button {
             width: 100%;
             padding: 18px;
@@ -76,7 +74,6 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.25);
         }
 
-        /* Ripple */
         button::after {
             content: "";
             position: absolute;
@@ -95,7 +92,6 @@
             transition: 0s;
         }
 
-        /* Fade out */
         .fade-out {
             animation: fadeOut 0.5s forwards;
         }
@@ -106,20 +102,12 @@
                 transform: scale(0.9);
             }
         }
-
-        /* Small phones */
-        @media (max-height: 700px) {
-            body {
-                align-items: flex-start;
-                padding-top: 70px;
-            }
-        }
     </style>
 </head>
 <body>
 
 <div class="card" id="card">
-    <h2>Choose Your Path</h2>
+    <h2>Select Gender</h2>
 
     <button class="male" onclick="goPage('male.html')">
         👨 Male
